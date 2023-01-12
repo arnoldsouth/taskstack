@@ -1,7 +1,7 @@
 {
   "name": "taskstack",
   "version": "1.0.0",
-  "description": "This is the goalsetter app from the [Learn the MERN Stack](https://www.youtube.com/watch?v=-0exw-9YJBo) series on YouTube.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
