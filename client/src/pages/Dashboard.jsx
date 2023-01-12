@@ -7,21 +7,21 @@ import {
 } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import GoalForm from '../components/GoalForm';
-import GoalItem from '../components/GoalItem';
 import Spinner from '../components/Spinner';
+import TaskForm from '../components/TaskForm';
+import TaskItem from '../components/TaskItem';
 import {
-  getGoals,
+  getTasks,
   reset,
-} from '../features/goals/goalSlice';
+} from '../features/tasks/taskSlice';
 
 function Dashboard() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
-  const { goals, isLoading, isError, message } = useSelector(
-    (state) => state.goals
+  const { tasks, isLoading, isError, message } = useSelector(
+    (state) => state.tasks
   );
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Dashboard() {
       navigate('/login');
     }
 
-    dispatch(getGoals());
+    dispatch(getTasks());
 
     return () => {
       dispatch(reset());
@@ -50,7 +50,7 @@ function Dashboard() {
         <div>Welcome {user && user.name}</div>
       </div> */}
 
-      <GoalForm />
+      <TaskForm />
 
       <div className="heading">
         <div className="heading-task-list">
@@ -59,12 +59,12 @@ function Dashboard() {
       </div>
 
       <div className="content">
-        {goals.length > 0 ? (
+        {tasks.length > 0 ? (
           <div className="tasks">
-            {goals.map((goal) => (
-              <GoalItem
-                key={goal._id}
-                goal={goal}
+            {tasks.map((task) => (
+              <TaskItem
+                key={task._id}
+                task={task}
               />
             ))}
           </div>

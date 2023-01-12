@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import { useDispatch } from 'react-redux';
 
-import { createGoal } from '../features/goals/goalSlice';
+import { createTask } from '../features/tasks/taskSlice';
 
-function GoalForm() {
+function TaskForm() {
   const [text, setText] = useState('');
 
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ function GoalForm() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(createGoal({ text }));
+    dispatch(createTask({ text }));
     setText('');
   };
 
@@ -42,4 +42,4 @@ function GoalForm() {
   );
 }
 
-export default GoalForm;
+export default TaskForm;
