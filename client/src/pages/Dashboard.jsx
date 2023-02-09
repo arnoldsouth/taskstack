@@ -30,7 +30,7 @@ function Dashboard() {
     }
 
     if (!user) {
-      navigate('/login');
+      navigate("/login");
     }
 
     dispatch(getTasks());
@@ -62,14 +62,11 @@ function Dashboard() {
         {tasks.length > 0 ? (
           <div className="tasks">
             {tasks.map((task) => (
-              <TaskItem
-                key={task._id}
-                task={task}
-              />
+              <TaskItem key={task._id} task={task} />
             ))}
           </div>
         ) : (
-          <div>No tasks created or remaining</div>
+          <p>Your taskstack is empty! :)</p>
         )}
       </div>
     </>

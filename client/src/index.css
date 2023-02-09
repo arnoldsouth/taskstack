@@ -15,6 +15,7 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  /* color: #7275a0; */
 }
 
 p {
@@ -53,19 +54,24 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem 1rem 1rem;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #7275a0;
   margin-top: 1rem;
+}
+.header a {
+  color: #7275a0;
 }
 
 .header-logo {
   font-family: "Bebas Neue";
-  font-size: 2rem;
+  color: #7275a0;
+  font-size: 3rem;
   display: flex;
 }
 
 .header-welcome {
-  font-size: 1rem;
-  font-family: "Quicksand";
+  font-size: 2rem;
+  font-family: "Bebas Neue";
+  /* color: #7275a0; */
   display: flex;
   /* justify-content: space-between; */
 }
@@ -142,7 +148,11 @@ h3 {
 
 .task {
   font-size: 0.75rem;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  /* background-color: #edeeff; */
+
+  background-color: #f4f8ff;
+  border: 1px solid #7275a0;
   margin-top: 1rem;
   /* padding: 20px 0 10px; */
   /* padding: 0.5rem; */
@@ -161,7 +171,7 @@ h3 {
 .task-item-date {
   font-size: 0.75rem;
   margin-top: 0.5rem;
-  color: #999;
+  color: #7275a0;
   display: flex;
   padding: 0 1rem 1rem;
 }
@@ -195,11 +205,12 @@ h3 {
 .form-group select {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #7275a0;
   /* border: 1px solid #7275a0; */
   border-radius: 0.5rem;
   margin-bottom: 10px;
   font-family: inherit;
+  background: #f4f8ff;
 }
 
 .form-group label {
@@ -233,7 +244,8 @@ h3 {
   font-family: "Bebas Neue";
   border: none;
   background: none;
-  color: #000;
+  /* color: #000; */
+  color: #7275a0;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
