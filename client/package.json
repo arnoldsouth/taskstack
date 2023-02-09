@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "taskstack.vercel.app",
+  "homepage": "https://taskstack.vercel.app/",
   "proxy": "http://localhost:6000",
   "private": true,
   "dependencies": {
